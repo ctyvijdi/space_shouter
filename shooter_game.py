@@ -16,7 +16,7 @@ FPS = 120
 finish = False
 a = 0
 b = 0
-font2 = font.SysFont('Arial',36)
+font2 = font.SysFont('calibri',36)
 #!
 class Game_Sprite(sprite.Sprite):
     def __init__(self,x,y,name,speed,waith,heigth):
@@ -74,8 +74,8 @@ for i in range(2):
     asteroid1 = asteroid(randint(100,900),100,"asteroid.png",randint(2,5),126,66)
     asteroids.add(asteroid1)
 mixer.music.play()
-font1 = font.SysFont("Arial", 50)
-font3 = font.SysFont("Arial", 150)
+font1 = font.SysFont("calibri", 50)
+font3 = font.SysFont("calibri", 150)
 
 lvl1 = font2.render("Уничтоженных:", True,(255,100,0))
 lvl2 = font2.render("Пропущенных:", True,(255,100,255))
@@ -177,16 +177,16 @@ while game:
             enemys.add(enemy)
             b += 1
             if b >= 10:
-                window.blit(win, (300, 300))
-                window.blit(contin, (200, 450))
+                window.blit(win, (250, 300))
+                window.blit(contin, (100, 450))
                 finish = True
         if a >= 5:
-            window.blit(lose, (300, 300))
-            window.blit(contin, (200, 450))
+            window.blit(lose, (250, 300))
+            window.blit(contin, (100, 450))
             finish = True
         if t <= 0:
-            window.blit(lose, (300, 300))
-            window.blit(contin, (200, 450))
+            window.blit(lose, (250, 300))
+            window.blit(contin, (100, 450))
             finish = True
 
         
